@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "context_id": "20251219-ICT_Test-1234-acde4800",
+  "status": {
+    "success": true,
+    "exit_code": 0,
+    "result": "SUCCESS"
+  },
+  "timing": {
+    "started_at": "2025-12-19T14:26:10+08:00",
+    "ended_at": "2025-12-19T14:40:02+08:00",
+    "duration_sec": 832,
+    "phases": [
+      { "name": "AnalyzeChanges", "sec": 2.1 },
+      { "name": "BuildHotfix", "sec": 55.4 },
+      { "name": "BuildBundles", "sec": 0.0 },
+      { "name": "BuildPackage", "sec": 720.0 },
+      { "name": "PostProcess", "sec": 54.5 }
+    ]
+  },
+  "computed_intent": {
+    "need_package": true,
+    "need_bundle": false,
+    "need_config": true,
+    "need_wwise": false,
+    "need_hotfix_hybridclr": true,
+    "need_hotfix_rawdll": false,
+    "reasons": [
+      "Assets/Resources 发生变更 => need_package",
+      "Assets/NFHotFix/*.cs 发生变更 => need_hotfix_hybridclr",
+      "Config 目录发生变更 => need_config"
+    ]
+  },
+  "versions": {
+    "unity_version": "2022.3.4f1",
+    "app_version": "1.2.3",
+    "bundle_version_code": 1234,
+    "autotest_version": "AT-20251219-1234"
+  },
+  "outputs": {
+    "artifacts": [
+      {
+        "name": "Android_AAB",
+        "type": "aab",
+        "local_path": "E:/Jenkins/workspace/ICT_Test/.ci/out/app-release.aab",
+        "size_bytes": 123456789,
+        "sha256": "optional",
+        "archive_relpath": ".ci/out/app-release.aab",
+        "public_url": "http://nginx/jenkins-artifacts/ICT_Test/1234/app-release.aab"
+      },
+      {
+        "name": "Bundle_Patch",
+        "type": "bundle",
+        "local_path": "E:/Jenkins/workspace/ICT_Test/.ci/out/bundles_patch.zip",
+        "size_bytes": 0,
+        "sha256": "",
+        "archive_relpath": ".ci/out/bundles_patch.zip",
+        "public_url": ""
+      }
+    ]
+  },
+  "logs": {
+    "unity_log_file": "E:/Jenkins/workspace/ICT_Test/.ci/logs/unity.log",
+    "build_log_file": "E:/Jenkins/workspace/ICT_Test/.ci/logs/build.log",
+    "public_log_url": "http://nginx/jenkins-logs/ICT_Test/1234/build.log"
+  },
+  "counters": {
+    "errors": 0,
+    "warnings": 12
+  },
+  "tests": {
+    "requested": true,
+    "executed": true,
+    "suite": "smoke",
+    "report_path": "E:/Jenkins/workspace/ICT_Test/.ci/out/autotest/report.xml",
+    "passed": 120,
+    "failed": 0
+  },
+  "failure": {
+    "category": "",
+    "message": "",
+    "stacktrace": ""
+  }
+}

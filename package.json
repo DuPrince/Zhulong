@@ -1,0 +1,21 @@
+{
+  "name": "com.twoeggdu.zhulong",
+  "displayName": "Zhulong",
+  "version": "0.0.4",
+  "unity": "2022.3",
+  "description": "common buildpipeline.",
+  "author": {
+    "name": "twoegg",
+    "email": "twoeggdu@163.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.2"
+  },
+  "samples": [
+    {
+      "displayName": "Basic Usage",
+      "description": "Example of how to use Awesome Feature.",
+      "path": "Samples~/Basic Usage"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+	"schema_version": "2.0",
+	"build_id": "20251223-Editor-Local-001",
+	"context": {
+		"runtime": "android",
+		"is_test": true,
+		"is_ci": true,
+		"unity_version": "2022.3.4f1",
+		"project": "ICT_Test"
+	},
+	"status": {
+		"success": true,
+		"exit_code": 0
+	},
+	"timing": {
+		"started_at": "2025-12-23T21:04:55+08:00",
+		"ended_at": "2025-12-23T21:18:47+08:00",
+		"duration_sec": 832,
+		"phases": [
+			{
+				"name": "AnalyzeChanges",
+				"sec": 2.1
+			},
+			{
+				"name": "BuildBundles",
+				"sec": 55.4
+			},
+			{
+				"name": "BuildPackage",
+				"sec": 720.0
+			}
+		]
+	},
+	"computed_intent": {
+		"need_package": true,
+		"need_bundle": false,
+		"need_config": true,
+		"need_wwise": false,
+		"need_hotfix_hybridclr": true,
+		"need_hotfix_rawdll": false,
+		"reasons": [
+			"Assets/Resources changed",
+			"Assets/NFHotFix/*.cs changed"
+		]
+	},
+	"outputs": {
+		"bundle": {
+			"touched": true,
+			"success": true,
+			"output_root": "Build/Android/Bundles"
+		},
+		"package": {
+			"touched": true,
+			"success": true,
+			"output_root": "Build/Android/Package"
+		}
+	},
+	"failure": {
+		"category": "",
+		"message": "",
+		"stacktrace": ""
+	}
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "context_id": "20251225-ICT_Test-1234-acde4800",
+
+  "meta": {
+    "job_name": "ICT_Test",
+    "build_number": 1234,
+    "node_name": "windows-agent-01",
+    "build_user": "dudingkun",
+    "trigger_source": "gitlab_webhook",
+    "build_url": "http://jenkins/job/ICT_Test/1234/",
+    "timestamp": "2025-12-25T15:10:00+08:00"
+  },
+
+  "profile": {
+    "name": "Android_Release"
+  },
+
+  "paths": {
+    "workspace": "E:/Jenkins/workspace/ICT_Test",
+    "project_path": "E:/Jenkins/workspace/ICT_Test/Project",
+    "ci_dir": "E:/Jenkins/workspace/ICT_Test/.ci",
+    "output_dir": "E:/Jenkins/workspace/ICT_Test/.ci/out"
+  },
+
+  "tools": {
+    "unity_path": "C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Unity.exe",
+    "svn_path": "C:/Program Files/TortoiseSVN/bin/svn.exe",
+    "python": "C:/Python311/python.exe"
+  },
+
+  "vcs": {
+    "type": "svn",
+    "code_sync": true,
+
+    "requested_revisions": {
+      "main": "123456",
+      "ext": "78910"
+    },
+
+    "repos": [
+      {
+        "name": "GameClient",
+        "url": "https://svn.company.com/svn/gameclient/trunk",
+        "wc_path": "E:/Jenkins/workspace/ICT_Test/Project",
+        "rev_before": 123400,
+        "rev_after": 123456
+      },
+      {
+        "name": "GameData",
+        "url": "https://svn.company.com/svn/gamedata/trunk",
+        "wc_path": "E:/Jenkins/workspace/ICT_Test/Data",
+        "rev_before": 88000,
+        "rev_after": 88910
+      }
+    ],
+
+    "changed_paths": [
+      { "repo": "GameClient", "path": "Assets/Resources/xxx.prefab", "action": "M" },
+      { "repo": "GameClient", "path": "Assets/NFHotFix/Foo.cs", "action": "A" },
+      { "repo": "GameData", "path": "Config/level/level_001.json", "action": "M" }
+    ],
+
+    "summary": {
+      "changed_count": 3,
+      "added": 1,
+      "modified": 2,
+      "deleted": 0
+    }
+  },
+
+  "build_settings": {
+    "build_target": "android",
+    "configuration": "Release",
+    "development": false,
+    "debug": false,
+
+    "net_domain": "prod",
+    "release_channel": "googleplay",
+
+    "enable_aab": true,
+    "enable_mt_rendering": true,
+    "enable_deep_profile": false,
+
+    "log_level": "Info",
+    "stacktrace_level": "ScriptOnly",
+
+    "clean_bee": true,
+    "clean_shader_cache": false
+  },
+
+  "pipeline": {
+    "stage": "Release",
+    "run_autotest": false,
+    "autotest_suite": "",
+    "upstream_version": "1.2.3"
+  },
+
+  "extra": {
+    "notes": "本次为 nightly 自动构建"
+  }
+}
