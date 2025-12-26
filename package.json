@@ -1,7 +1,7 @@
 {
   "name": "com.twoeggdu.zhulong",
   "displayName": "Zhulong",
-  "version": "0.0.6",
+  "version": "0.0.10",
   "unity": "2022.3",
   "description": "common buildpipeline.",
   "author": {
